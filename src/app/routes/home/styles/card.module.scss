@@ -1,0 +1,38 @@
+.container {
+  @include card_container;
+  .card_actions {
+    margin: 8px 0px;
+    display: flex;
+    justify-content: flex-end;
+    .action {
+      font-size: 12px;
+      width: 36px;
+      height: 32px;
+      margin: 0px 4px;
+      text-align: center;
+      i {
+        font-size: 18px;
+      }
+    }
+  }
+  .avatar {
+    border-radius: 4px;
+    width: 100%;
+    height: 150px;
+  }
+  .details {
+    margin-top: 16px;
+    .section {
+      display: flex;
+      .label {
+        color: $text-primary-color;
+        @include typography(xs, bold);
+      }
+      .value {
+        color: $text-primary-color;
+        margin-left: 4px;
+        @include typography(xs);
+      }
+    }
+  }
+}

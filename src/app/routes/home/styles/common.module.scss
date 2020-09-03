@@ -1,0 +1,6 @@
+.container {
+  @include card_container;
+  .student-card {
+    margin: 8px 0px;
+  }
+}

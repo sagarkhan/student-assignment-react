@@ -1,0 +1,9 @@
+.container {
+  @include card_container;
+}
+
+.form-action {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
